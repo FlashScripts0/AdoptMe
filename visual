@@ -84,6 +84,17 @@ spawn(function()
     end
 end)
 
+-- Añadir créditos
+local CreditsLabel = Instance.new("TextLabel")
+CreditsLabel.Name = "CreditsLabel"
+CreditsLabel.Parent = PanelFrame
+CreditsLabel.Size = UDim2.new(1, 0, 0, 20)
+CreditsLabel.Position = UDim2.new(0, 0, 0.9, 0)
+CreditsLabel.BackgroundTransparency = 1
+CreditsLabel.Text = "Flashscripts"
+CreditsLabel.Font = Enum.Font.SourceSansItalic
+CreditsLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+CreditsLabel.TextScaled = true
 
 -- Cargar módulos necesarios
 local Loads = require(game.ReplicatedStorage.Fsys).load
